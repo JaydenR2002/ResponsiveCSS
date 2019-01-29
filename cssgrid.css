@@ -1,0 +1,48 @@
+	body
+		{	font-family: sans-serif;	margin: 0;	padding: 0;	}
+
+
+
+	header
+		{	background: green;	color: white;	}
+
+
+
+	aside
+		{	background: gold;	color: black;	}
+
+
+	footer
+		{	background: gold;	color: black;	}
+
+
+	.lang
+		{	background-color: pink;		}
+
+
+	section:nth-child(12)
+		{	background-color: red;	}
+
+@media screen and (min-width: 60em)
+	{
+
+
+	body
+		{	display: grid;		grid-template-columns: 1fr 1fr 1fr;	}
+
+
+	header
+		{	grid-column: 0/3;	}
+
+
+	.lang
+		{	grid-row: span 2;	}
+
+	section:nth-child(12)
+		{	grid-column: span 3;	}
+
+
+	aside
+		{	grid-column: 1/3;	}
+
+	}
